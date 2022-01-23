@@ -9,16 +9,42 @@ import UIKit
 
 class CategoryTableViewController: UITableViewController {
     
+    var categories: [Category] = [
+        Category(categoryName: "iOS-Utveckling", categoryDescription: "Lär dig utveckla appar till iPhones och Mac!", categoryID: 1, image: "apple", courses: [
+            swift, objC, javaScript
+        ]),
+        Category(categoryName: "Android-Utveckling", categoryDescription: "Lär dig utveckla appar till Android!", categoryID: 2, image: "android", courses: [
+            java, kotlin, javaScript
+        ]),
+        Category(categoryName: "Webb-Utveckling", categoryDescription: "Lär dig skapa interaktiva hemsidor!", categoryID: 3, image: "web", courses: [
+            html, css,javaScript
+        ]),
+        Category(categoryName: "Cloud-Utveckling", categoryDescription: "Blabla gör det cloud folk gör", categoryID: 4, image: "cloud", courses: [
+            java, javaScript, python
+        ]),
+        Category(categoryName: ".NET-Utveckling", categoryDescription: "Gör windows saker woo", categoryID: 5, image: "dotnet", courses: [
+            cSharp, html, css
+        ]),
+        Category(categoryName: "IT-Säkerhet", categoryDescription: "Blabla och så vidare",  categoryID: 7, image: "security", courses: [
+            cSharp, python, java, javaScript
+        ]),
+        Category(categoryName: "Internet of Things", categoryDescription: "Detta är en beskrivning blabla",  categoryID: 8, image: "iot", courses: [
+            cSharp, java
+        ]),
+        Category(categoryName: "Maskininlärning", categoryDescription: "Gör robotar, sponsrat av skynet",  categoryID: 9, image: "machine", courses: [
+            python, javaScript
+        ]),
+        Category(categoryName: "Backend-Utveckling", categoryDescription: "Detta är en beskrivning blabla",  categoryID: 10, image: "back", courses: [
+            cplus, cSharp, java
+        ])
+    ]
+
+    
     var testArrayCategory: [String] = ["Hejsan1", "Hejsan2"]
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem
     }
 
     // MARK: - Table view data source
@@ -30,7 +56,7 @@ class CategoryTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return testArrayCategory.count
+        return categories.count
     }
 
     
@@ -38,55 +64,24 @@ class CategoryTableViewController: UITableViewController {
      
         let cellIdentifier = "customCategoryCell"
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! CategoryTableViewCell
-        cell.test1.text = testArrayCategory[indexPath.row]
+        
+        cell.categoryName.text = categories[indexPath.row].categoryName
+        cell.categoryDescription.text = categories[indexPath.row].categoryDescription
+        cell.categoryImage.image = UIImage(named: categories[indexPath.row].categoryImage)
         
         return cell
     }
     
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
-    }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-        if editingStyle == .delete {
-            // Delete the row from the data source
-            tableView.deleteRows(at: [indexPath], with: .fade)
-        } else if editingStyle == .insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
-
-    /*
     // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+        if segue.identifier == "segueToCourses" {
+            if let indexPath = tableView.indexPathForSelectedRow {
+                let destinationController = segue.destination as! CoursesTableViewController
+                
+                destinationController.categories = categories[indexPath.row]
+            }
+        }
     }
-    */
 
 }

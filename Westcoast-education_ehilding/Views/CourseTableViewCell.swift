@@ -9,7 +9,9 @@ import UIKit
 
 class CourseTableViewCell: UITableViewCell {
     
-    @IBOutlet var test2: UILabel!
+    @IBOutlet var courseImage: UIImageView!
+    @IBOutlet var courseName: UILabel!
+    @IBOutlet var courseDescription: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()

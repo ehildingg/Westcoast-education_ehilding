@@ -9,7 +9,7 @@ import UIKit
 
 class CoursesTableViewController: UITableViewController {
     
-    var testArrayCourses: [String] = ["Hejsan1", "Hejsan2"]
+    var categories: Category?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,7 +29,7 @@ class CoursesTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return testArrayCourses.count
+        return 1
     }
 
     
@@ -38,8 +38,6 @@ class CoursesTableViewController: UITableViewController {
         let cellIdentifier = "customCourseCell"
         
         let cell = tableView.dequeueReusableCell(withIdentifier: cellIdentifier, for: indexPath) as! CourseTableViewCell
-
-        cell.test2.text = testArrayCourses[indexPath.row]
 
         return cell
     }
