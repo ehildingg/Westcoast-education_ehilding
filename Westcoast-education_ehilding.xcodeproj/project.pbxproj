@@ -9,21 +9,33 @@
 /* Begin PBXBuildFile section */
 		12E01656279DB6A900B34655 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E01655279DB6A900B34655 /* AppDelegate.swift */; };
 		12E01658279DB6A900B34655 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E01657279DB6A900B34655 /* SceneDelegate.swift */; };
-		12E0165A279DB6A900B34655 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E01659279DB6A900B34655 /* ViewController.swift */; };
 		12E0165D279DB6A900B34655 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12E0165B279DB6A900B34655 /* Main.storyboard */; };
 		12E0165F279DB6AA00B34655 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12E0165E279DB6AA00B34655 /* Assets.xcassets */; };
 		12E01662279DB6AA00B34655 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12E01660279DB6AA00B34655 /* LaunchScreen.storyboard */; };
+		12E0166D279DB91500B34655 /* CategoryTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E0166C279DB91500B34655 /* CategoryTableViewController.swift */; };
+		12E0166F279DB92600B34655 /* CoursesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E0166E279DB92600B34655 /* CoursesTableViewController.swift */; };
+		12E01671279DB94300B34655 /* DetailCourseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E01670279DB94300B34655 /* DetailCourseViewController.swift */; };
+		12E01673279DB9CD00B34655 /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E01672279DB9CD00B34655 /* CategoryModel.swift */; };
+		12E01675279DB9D700B34655 /* CourseModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E01674279DB9D700B34655 /* CourseModel.swift */; };
+		12E01679279DBA5F00B34655 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E01678279DBA5F00B34655 /* CategoryTableViewCell.swift */; };
+		12E0167B279DBA7300B34655 /* CourseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E0167A279DBA7300B34655 /* CourseTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		12E01652279DB6A900B34655 /* Westcoast-education_ehilding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Westcoast-education_ehilding.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		12E01655279DB6A900B34655 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12E01657279DB6A900B34655 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		12E01659279DB6A900B34655 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		12E0165C279DB6A900B34655 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		12E0165E279DB6AA00B34655 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		12E01661279DB6AA00B34655 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		12E01663279DB6AA00B34655 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12E0166C279DB91500B34655 /* CategoryTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewController.swift; sourceTree = "<group>"; };
+		12E0166E279DB92600B34655 /* CoursesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesTableViewController.swift; sourceTree = "<group>"; };
+		12E01670279DB94300B34655 /* DetailCourseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailCourseViewController.swift; sourceTree = "<group>"; };
+		12E01672279DB9CD00B34655 /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
+		12E01674279DB9D700B34655 /* CourseModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseModel.swift; sourceTree = "<group>"; };
+		12E01678279DBA5F00B34655 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
+		12E0167A279DBA7300B34655 /* CourseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,45 @@
 		12E01654279DB6A900B34655 /* Westcoast-education_ehilding */ = {
 			isa = PBXGroup;
 			children = (
+				12E01669279DB8C100B34655 /* Models */,
+				12E0166B279DB8D000B34655 /* Views */,
+				12E0166A279DB8C900B34655 /* Controllers */,
 				12E01655279DB6A900B34655 /* AppDelegate.swift */,
 				12E01657279DB6A900B34655 /* SceneDelegate.swift */,
-				12E01659279DB6A900B34655 /* ViewController.swift */,
 				12E0165B279DB6A900B34655 /* Main.storyboard */,
 				12E0165E279DB6AA00B34655 /* Assets.xcassets */,
 				12E01660279DB6AA00B34655 /* LaunchScreen.storyboard */,
 				12E01663279DB6AA00B34655 /* Info.plist */,
 			);
 			path = "Westcoast-education_ehilding";
+			sourceTree = "<group>";
+		};
+		12E01669279DB8C100B34655 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				12E01672279DB9CD00B34655 /* CategoryModel.swift */,
+				12E01674279DB9D700B34655 /* CourseModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		12E0166A279DB8C900B34655 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				12E0166C279DB91500B34655 /* CategoryTableViewController.swift */,
+				12E0166E279DB92600B34655 /* CoursesTableViewController.swift */,
+				12E01670279DB94300B34655 /* DetailCourseViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		12E0166B279DB8D000B34655 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				12E01678279DBA5F00B34655 /* CategoryTableViewCell.swift */,
+				12E0167A279DBA7300B34655 /* CourseTableViewCell.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,9 +180,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12E0165A279DB6A900B34655 /* ViewController.swift in Sources */,
+				12E0166F279DB92600B34655 /* CoursesTableViewController.swift in Sources */,
+				12E01673279DB9CD00B34655 /* CategoryModel.swift in Sources */,
 				12E01656279DB6A900B34655 /* AppDelegate.swift in Sources */,
 				12E01658279DB6A900B34655 /* SceneDelegate.swift in Sources */,
+				12E01671279DB94300B34655 /* DetailCourseViewController.swift in Sources */,
+				12E0167B279DBA7300B34655 /* CourseTableViewCell.swift in Sources */,
+				12E0166D279DB91500B34655 /* CategoryTableViewController.swift in Sources */,
+				12E01675279DB9D700B34655 /* CourseModel.swift in Sources */,
+				12E01679279DBA5F00B34655 /* CategoryTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
