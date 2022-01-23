@@ -64,21 +64,9 @@ class CoursesTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
-        // Hämta vald tillverkare för markerad rad(cell)
-        guard let course = self.dataSource.itemIdentifier(for: indexPath) else {
-            return UISwipeActionsConfiguration()
-        }
         
-        // Skapa en delete/ta bort-händelse (Action)
         let favoriteAction = UIContextualAction(style: .normal, title: "Favorit") {
             (action, sourceView, completionHandler) in
-//            var snapshot = self.dataSource.snapshot()
-//            // Indikera borttagning av hittat objekt ur tabellen
-//            snapshot.deleteItems([course])
-//            // Ta bort det på riktigt
-//            self.dataSource.apply(snapshot, animatingDifferences: true)
-            
-            // Stäng ner favoriteAction
             completionHandler(true)
         }
         

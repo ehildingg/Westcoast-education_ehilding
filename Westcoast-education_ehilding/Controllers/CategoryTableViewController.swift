@@ -39,9 +39,6 @@ class CategoryTableViewController: UITableViewController {
         ])
     ]
 
-    
-    var testArrayCategory: [String] = ["Hejsan1", "Hejsan2"]
-
     override func viewDidLoad() {
         super.viewDidLoad()
 
