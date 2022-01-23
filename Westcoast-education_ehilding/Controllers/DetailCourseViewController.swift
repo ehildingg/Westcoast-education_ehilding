@@ -8,11 +8,19 @@
 import UIKit
 
 class DetailCourseViewController: UIViewController {
+    
+    @IBOutlet var courseDetailName: UILabel!
+    @IBOutlet var courseDetailDescript: UILabel!
+    @IBOutlet var courseDetailImage: UIImageView!
+    
+    var course: Courses?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        courseDetailName.text = course?.courseName
+        courseDetailDescript.text = course?.courseLongDescription
+        courseDetailImage.image = UIImage(named: course!.courseImage)
     }
     
 

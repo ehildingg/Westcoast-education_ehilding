@@ -49,7 +49,51 @@ class CoursesTableViewController: UITableViewController {
     
     // MARK: - Navigation
 
- 
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segueToDetails" {
+            if let indexPath = tableView.indexPathForSelectedRow {
+                let destinationController = segue.destination as! DetailCourseViewController
+                
+                destinationController.course = categories?.courses[indexPath.row]
+            }
+        }
+    }
+    
+    @IBAction func closeDialog(segue: UIStoryboardSegue) {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        // Hämta vald tillverkare för markerad rad(cell)
+        guard let course = self.dataSource.itemIdentifier(for: indexPath) else {
+            return UISwipeActionsConfiguration()
+        }
+        
+        // Skapa en delete/ta bort-händelse (Action)
+        let favoriteAction = UIContextualAction(style: .normal, title: "Favorit") {
+            (action, sourceView, completionHandler) in
+//            var snapshot = self.dataSource.snapshot()
+//            // Indikera borttagning av hittat objekt ur tabellen
+//            snapshot.deleteItems([course])
+//            // Ta bort det på riktigt
+//            self.dataSource.apply(snapshot, animatingDifferences: true)
+            
+            // Stäng ner favoriteAction
+            completionHandler(true)
+        }
+        
+        favoriteAction.backgroundColor = UIColor.systemBlue
+        favoriteAction.image = UIImage(systemName: "heart")
+        let swipeConfig = UISwipeActionsConfiguration(actions: [favoriteAction])
+        
+        return swipeConfig
+
+    }
+    
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+
  
 
 }
