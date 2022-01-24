@@ -16,7 +16,6 @@ class CoursesTableViewController: UITableViewController {
         super.viewDidLoad()
         
         initDataLoad()
-
     }
     
     func initDataLoad() {
@@ -65,6 +64,8 @@ class CoursesTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         
+        
+        //Actionsheet? Den ska markeras på något sätt iaf!
         let favoriteAction = UIContextualAction(style: .normal, title: "Favorit") {
             (action, sourceView, completionHandler) in
             completionHandler(true)

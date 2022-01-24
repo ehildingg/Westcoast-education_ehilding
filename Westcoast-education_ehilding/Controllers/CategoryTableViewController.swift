@@ -13,6 +13,7 @@ class CategoryTableViewController: UITableViewController {
     var categories: [Category] = []
     
     override func viewDidLoad() {
+        
         initCourses()
         initCategories()
     }
@@ -56,7 +57,7 @@ class CategoryTableViewController: UITableViewController {
     func initCourses(){
         
         let dummyShortDescription: String = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent molestie risus ut eleifend interdum."
-        let dummyLongDescription: String = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent molestie risus ut eleifend interdum. Nunc vel nulla cursus, luctus nunc elementum, suscipit nisi. Aliquam pharetra lorem eu arcu maximus scelerisque. Nulla scelerisque odio elit, a pulvinar lectus blandit ut. Morbi eget tellus massa. Etiam sed velit sed nisl pretium ornare."
+        let dummyLongDescription: String = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent molestie risus ut eleifend interdum. Nunc vel nulla cursus, luctus nunc elementum, suscipit nisi. Aliquam pharetra lorem eu arcu maximus scelerisque. Nulla scelerisque odio elit, a pulvinar lectus blandit ut."
         
         cSharp = Courses(name: "C#",
                              shortDescript: dummyShortDescription,
