@@ -64,18 +64,46 @@ class CoursesTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         
-        
-        //Actionsheet? Den ska markeras på något sätt iaf!
-        let favoriteAction = UIContextualAction(style: .normal, title: "Favorit") {
-            (action, sourceView, completionHandler) in
-            completionHandler(true)
-        }
-        
-        favoriteAction.backgroundColor = UIColor.systemBlue
-        favoriteAction.image = UIImage(systemName: "heart")
-        let swipeConfig = UISwipeActionsConfiguration(actions: [favoriteAction])
-        
-        return swipeConfig
+        guard let courses = self.dataSource.itemIdentifier(for: indexPath) else {
+                    return UISwipeActionsConfiguration()
+                    
+                }
+                
+                let favoriteAction = UIContextualAction(style: .normal, title: "Favorite") {
+                    (action, sourceView, completionHandler) in
+                    let snapshot = self.dataSource.snapshot()
+                    
+                    let cell = tableView.cellForRow(at: indexPath) as! CourseTableViewCell
+                    
+                    if(cell.favoriteImage.currentImage == UIImage(systemName: "star.fill")){
+                        cell.favoriteImage.setImage(UIImage(systemName: "star"), for: .normal)
+                    } else {
+                        cell.favoriteImage.setImage(UIImage(systemName: "star.fill"), for: .normal)
+                    }
+                    
+                    
+                    self.dataSource.apply(snapshot, animatingDifferences: false)
+                    
+                    completionHandler(true)
+                }
+                
+                favoriteAction.backgroundColor = UIColor(named: "favoriteColor")
+                
+          
+                
+                let swipeConfig = UISwipeActionsConfiguration(actions: [favoriteAction])
+                return swipeConfig
+//        //Actionsheet? Den ska markeras på något sätt iaf!
+//        let favoriteAction = UIContextualAction(style: .normal, title: "Favorit") {
+//            (action, sourceView, completionHandler) in
+//            completionHandler(true)
+//        }
+//        
+//        favoriteAction.backgroundColor = UIColor.systemBlue
+//        favoriteAction.image = UIImage(systemName: "heart")
+//        let swipeConfig = UISwipeActionsConfiguration(actions: [favoriteAction])
+//        
+//        return swipeConfig
 
     }
     

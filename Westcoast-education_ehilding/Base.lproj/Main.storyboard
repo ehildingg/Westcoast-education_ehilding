@@ -37,12 +37,18 @@
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="30"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="40"/>
+                                                </variation>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Course Long Descript" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IFF-hM-amK">
                                                 <rect key="frame" x="0.0" y="82.5" width="177.5" height="21.5"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
+                                                <variation key="heightClass=regular-widthClass=regular">
+                                                    <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="20"/>
+                                                </variation>
                                             </label>
                                         </subviews>
                                         <variation key="heightClass=compact" axis="horizontal"/>
@@ -56,6 +62,7 @@
                         <constraints>
                             <constraint firstItem="wh6-7P-6eI" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="5up-nd-Bs4">
                                 <variation key="heightClass=compact" constant="30"/>
+                                <variation key="heightClass=regular-widthClass=regular" constant="150"/>
                             </constraint>
                             <constraint firstAttribute="trailing" secondItem="Xpj-FK-iaI" secondAttribute="trailing" id="Bfv-ul-gal"/>
                             <constraint firstItem="Xpj-FK-iaI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="TVz-WY-kib"/>
@@ -63,7 +70,9 @@
                             <constraint firstItem="wh6-7P-6eI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="80" id="jJf-lb-tjq">
                                 <variation key="heightClass=compact" constant="110"/>
                             </constraint>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wh6-7P-6eI" secondAttribute="trailing" constant="50" id="qeA-mq-dd1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wh6-7P-6eI" secondAttribute="trailing" constant="50" id="qeA-mq-dd1">
+                                <variation key="heightClass=regular-widthClass=regular" constant="150"/>
+                            </constraint>
                             <constraint firstAttribute="bottom" secondItem="Xpj-FK-iaI" secondAttribute="bottom" id="tad-yd-dg4"/>
                         </constraints>
                     </view>
@@ -214,11 +223,23 @@
                                                 </stackView>
                                             </subviews>
                                         </stackView>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zXd-5X-QqH">
+                                            <rect key="frame" x="366" y="5" width="47" height="31"/>
+                                            <state key="normal" title="Button"/>
+                                            <buttonConfiguration key="configuration" style="plain" image="star" catalog="system">
+                                                <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </buttonConfiguration>
+                                            <connections>
+                                                <action selector="favoriteImageButtonWith_sender:" destination="s5A-Um-PZ8" eventType="touchUpInside" id="I1O-zW-5IO"/>
+                                            </connections>
+                                        </button>
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="EU0-PQ-TCy" firstAttribute="top" secondItem="lxN-Ez-mRB" secondAttribute="top" id="0iY-bq-Ikl"/>
                                         <constraint firstAttribute="trailing" secondItem="EU0-PQ-TCy" secondAttribute="trailing" id="BIa-J4-pc4"/>
+                                        <constraint firstItem="zXd-5X-QqH" firstAttribute="top" secondItem="lxN-Ez-mRB" secondAttribute="top" constant="5" id="BUq-Ey-O0H"/>
                                         <constraint firstAttribute="trailingMargin" secondItem="f96-Tx-uHc" secondAttribute="trailing" id="BZG-tG-UNc"/>
+                                        <constraint firstAttribute="trailing" secondItem="zXd-5X-QqH" secondAttribute="trailing" constant="1" id="KSn-JJ-F0k"/>
                                         <constraint firstAttribute="bottom" secondItem="EU0-PQ-TCy" secondAttribute="bottom" id="WGk-iU-iJY"/>
                                         <constraint firstItem="f96-Tx-uHc" firstAttribute="leading" secondItem="lxN-Ez-mRB" secondAttribute="leadingMargin" id="bmB-qm-pUG"/>
                                         <constraint firstItem="f96-Tx-uHc" firstAttribute="top" secondItem="lxN-Ez-mRB" secondAttribute="topMargin" id="jMo-NJ-ABs"/>
@@ -230,6 +251,7 @@
                                     <outlet property="courseDescription" destination="KCG-OY-MmR" id="wDc-VH-ydd"/>
                                     <outlet property="courseImage" destination="zIU-ka-mSo" id="wZf-OT-lG9"/>
                                     <outlet property="courseName" destination="QDx-iE-oya" id="tp2-D1-fKM"/>
+                                    <outlet property="favoriteImage" destination="zXd-5X-QqH" id="cvT-kN-2RR"/>
                                     <segue destination="BYZ-38-t0r" kind="presentation" identifier="segueToDetails" id="BcC-a5-Bwo"/>
                                 </connections>
                             </tableViewCell>
@@ -243,7 +265,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cdd-er-Vto" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2422" y="82"/>
+            <point key="canvasLocation" x="2421.739130434783" y="81.696428571428569"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="vLm-JM-n2R">
@@ -266,6 +288,7 @@
     </scenes>
     <resources>
         <image name="background" width="1584" height="1056"/>
+        <image name="star" catalog="system" width="128" height="116"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

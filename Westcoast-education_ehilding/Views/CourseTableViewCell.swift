@@ -12,6 +12,10 @@ class CourseTableViewCell: UITableViewCell {
     @IBOutlet var courseImage: UIImageView!
     @IBOutlet var courseName: UILabel!
     @IBOutlet var courseDescription: UILabel!
+    @IBOutlet weak var favoriteImage: UIButton!
+    
+    
+    
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -23,5 +27,10 @@ class CourseTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-
+    
+    @IBAction func favoriteImageButton(_sender: Any) {
+        
+        
+        
+    }
 }
