@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oMR-pB-0Sy">
-    <device id="retina6_1" orientation="landscape" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,24 +13,24 @@
             <objects>
                 <viewController title="DetailCoursesViewController" id="BYZ-38-t0r" customClass="DetailCourseViewController" customModule="Westcoast_education_ehilding" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="Xpj-FK-iaI">
-                                <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="wh6-7P-6eI" userLabel="Root Stack">
-                                <rect key="frame" x="74" y="110" width="728" height="180"/>
+                                <rect key="frame" x="50" y="80" width="314" height="334"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lRl-6i-kND" userLabel="Course ImageView">
-                                        <rect key="frame" x="0.0" y="0.0" width="180" height="180"/>
+                                        <rect key="frame" x="67" y="0.0" width="180" height="180"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="180" id="RkD-Ag-Egg"/>
                                             <constraint firstAttribute="width" constant="180" id="Vbs-eE-eIi"/>
                                         </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="AGV-bb-KtO" userLabel="Label Stack">
-                                        <rect key="frame" x="366" y="69" width="362" height="42.5"/>
+                                        <rect key="frame" x="68.5" y="230" width="177.5" height="104"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Course Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XiW-vi-n2V">
                                                 <rect key="frame" x="0.0" y="0.0" width="177.5" height="42.5"/>
@@ -42,7 +42,7 @@
                                                 </variation>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Course Long Descript" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IFF-hM-amK">
-                                                <rect key="frame" x="217.5" y="0.0" width="144.5" height="42.5"/>
+                                                <rect key="frame" x="0.0" y="82.5" width="177.5" height="21.5"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="15"/>
                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
@@ -57,7 +57,7 @@
                                 <variation key="heightClass=compact" axis="horizontal"/>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wJ1-EO-Seo" userLabel="Close Button">
-                                <rect key="frame" x="806" y="15" width="46" height="34"/>
+                                <rect key="frame" x="368" y="10" width="46" height="34"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" image="xmark" catalog="system">
                                     <preferredSymbolConfiguration key="preferredSymbolConfigurationForImage" configurationType="pointSize" pointSize="17"/>
@@ -106,27 +106,27 @@
         <scene sceneID="12e-Qo-9IC">
             <objects>
                 <tableViewController title="CategoryTableViewController" id="I1Z-eb-NMe" customClass="CategoryTableViewController" customModule="Westcoast_education_ehilding" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="UWU-7H-L0U">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" contentViewInsetsToSafeArea="NO" id="UWU-7H-L0U">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="customCategoryCell" rowHeight="150" id="G49-Jg-K6y" customClass="CategoryTableViewCell" customModule="Westcoast_education_ehilding" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44.5" width="896" height="150"/>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="customCategoryCell" rowHeight="150" id="G49-Jg-K6y" customClass="CategoryTableViewCell" customModule="Westcoast_education_ehilding" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="150"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="G49-Jg-K6y" id="fdU-WA-nsc">
-                                    <rect key="frame" x="44" y="0.0" width="808" height="150"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="G49-Jg-K6y" id="fdU-WA-nsc">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="7m1-Sv-Yq0">
-                                            <rect key="frame" x="0.0" y="0.0" width="808" height="150"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="150" id="8MI-ak-ulo"/>
                                                 <constraint firstAttribute="width" constant="414" id="mo1-j4-XHd"/>
                                             </constraints>
                                         </imageView>
                                         <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="BYx-I6-ZSd" userLabel="Root Stack ">
-                                            <rect key="frame" x="20" y="11" width="768" height="128"/>
+                                            <rect key="frame" x="20" y="11" width="374" height="128"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ten-Z7-Hkq" userLabel="CategoryImageView">
                                                     <rect key="frame" x="0.0" y="14" width="100" height="100"/>
@@ -136,10 +136,10 @@
                                                     </constraints>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="kEY-bj-0cA" userLabel="Label Stack">
-                                                    <rect key="frame" x="123" y="30" width="645" height="68"/>
+                                                    <rect key="frame" x="123" y="30" width="251" height="68"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CategoryNameLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eua-rq-C5C">
-                                                            <rect key="frame" x="0.0" y="0.0" width="645" height="31.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="251" height="31.5"/>
                                                             <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="22"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -180,7 +180,7 @@
                             <outlet property="delegate" destination="I1Z-eb-NMe" id="wgW-uV-Iwm"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="0Yv-B1-fTs"/>
+                    <navigationItem key="navigationItem" title="Kategorier" id="0Yv-B1-fTs"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5iA-E6-rR1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -190,27 +190,27 @@
         <scene sceneID="FUS-qo-y6j">
             <objects>
                 <tableViewController title="CoursesTableViewController" id="e9F-CS-7MC" customClass="CoursesTableViewController" customModule="Westcoast_education_ehilding" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="n0u-P5-vgc">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" contentViewInsetsToSafeArea="NO" id="n0u-P5-vgc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <prototypes>
                             <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="customCourseCell" rowHeight="150" id="s5A-Um-PZ8" customClass="CourseTableViewCell" customModule="Westcoast_education_ehilding" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="44.5" width="896" height="150"/>
+                                <rect key="frame" x="0.0" y="44.5" width="414" height="150"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="s5A-Um-PZ8" id="lxN-Ez-mRB">
-                                    <rect key="frame" x="44" y="0.0" width="808" height="150"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="EU0-PQ-TCy">
-                                            <rect key="frame" x="0.0" y="0.0" width="808" height="150"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="150"/>
                                             <constraints>
                                                 <constraint firstAttribute="width" constant="414" id="0iY-Lv-CC8"/>
                                                 <constraint firstAttribute="height" constant="150" id="SiD-fE-vSc"/>
                                             </constraints>
                                         </imageView>
                                         <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="f96-Tx-uHc" userLabel="Root Stack">
-                                            <rect key="frame" x="20" y="11" width="768" height="128"/>
+                                            <rect key="frame" x="20" y="11" width="374" height="128"/>
                                             <subviews>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="zIU-ka-mSo" userLabel="CategoryImageView">
                                                     <rect key="frame" x="0.0" y="14" width="100" height="100"/>
@@ -220,10 +220,10 @@
                                                     </constraints>
                                                 </imageView>
                                                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="Zsy-FU-A6j" userLabel="Label Stack">
-                                                    <rect key="frame" x="123" y="32.5" width="645" height="63"/>
+                                                    <rect key="frame" x="123" y="32.5" width="251" height="63"/>
                                                     <subviews>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CourseNameLabel" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QDx-iE-oya">
-                                                            <rect key="frame" x="0.0" y="0.0" width="645" height="31.5"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="251" height="31.5"/>
                                                             <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="22"/>
                                                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <nil key="highlightedColor"/>
@@ -240,7 +240,7 @@
                                             </subviews>
                                         </stackView>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zXd-5X-QqH">
-                                            <rect key="frame" x="760" y="5" width="47" height="31"/>
+                                            <rect key="frame" x="366" y="5" width="47" height="31"/>
                                             <state key="normal" title="Button"/>
                                             <buttonConfiguration key="configuration" style="plain" image="star" catalog="system">
                                                 <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -253,9 +253,13 @@
                                     <constraints>
                                         <constraint firstItem="EU0-PQ-TCy" firstAttribute="top" secondItem="lxN-Ez-mRB" secondAttribute="top" id="0iY-bq-Ikl"/>
                                         <constraint firstAttribute="trailing" secondItem="EU0-PQ-TCy" secondAttribute="trailing" id="BIa-J4-pc4"/>
-                                        <constraint firstItem="zXd-5X-QqH" firstAttribute="top" secondItem="lxN-Ez-mRB" secondAttribute="top" constant="5" id="BUq-Ey-O0H"/>
+                                        <constraint firstItem="zXd-5X-QqH" firstAttribute="top" secondItem="lxN-Ez-mRB" secondAttribute="top" constant="5" id="BUq-Ey-O0H">
+                                            <variation key="heightClass=compact" constant="10"/>
+                                        </constraint>
                                         <constraint firstAttribute="trailingMargin" secondItem="f96-Tx-uHc" secondAttribute="trailing" id="BZG-tG-UNc"/>
-                                        <constraint firstAttribute="trailing" secondItem="zXd-5X-QqH" secondAttribute="trailing" constant="1" id="KSn-JJ-F0k"/>
+                                        <constraint firstAttribute="trailing" secondItem="zXd-5X-QqH" secondAttribute="trailing" constant="1" id="KSn-JJ-F0k">
+                                            <variation key="heightClass=compact" constant="30"/>
+                                        </constraint>
                                         <constraint firstAttribute="bottom" secondItem="EU0-PQ-TCy" secondAttribute="bottom" id="WGk-iU-iJY"/>
                                         <constraint firstItem="f96-Tx-uHc" firstAttribute="leading" secondItem="lxN-Ez-mRB" secondAttribute="leadingMargin" id="bmB-qm-pUG"/>
                                         <constraint firstItem="f96-Tx-uHc" firstAttribute="top" secondItem="lxN-Ez-mRB" secondAttribute="topMargin" id="jMo-NJ-ABs"/>
@@ -277,7 +281,7 @@
                             <outlet property="delegate" destination="e9F-CS-7MC" id="dh3-SH-wY4"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="kNE-8k-9EI"/>
+                    <navigationItem key="navigationItem" title="Kurser" id="kNE-8k-9EI"/>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cdd-er-Vto" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -289,7 +293,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oMR-pB-0Sy" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Evx-TV-60d">
-                        <rect key="frame" x="0.0" y="0.0" width="896" height="44"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
