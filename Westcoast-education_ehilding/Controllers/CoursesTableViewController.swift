@@ -111,6 +111,4 @@ class CoursesTableViewController: UITableViewController {
         return true
     }
 
- 
-
 }

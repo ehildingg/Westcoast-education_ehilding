@@ -24,5 +24,7 @@ class DetailCourseViewController: UIViewController {
     }
 
     // MARK: - Navigation
+    
+    
 
 }
