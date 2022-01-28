@@ -18,6 +18,10 @@ class CategoryTableViewController: UITableViewController {
         initCategories()
     }
     
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    
     // MARK: - Table view data source
 
     override func numberOfSections(in tableView: UITableView) -> Int {
@@ -39,6 +43,7 @@ class CategoryTableViewController: UITableViewController {
         
         return cell
     }
+    
     
     // MARK: - Navigation
     

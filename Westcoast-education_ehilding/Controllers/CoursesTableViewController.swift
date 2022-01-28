@@ -18,6 +18,11 @@ class CoursesTableViewController: UITableViewController {
         initDataLoad()
     }
     
+    // MARK: - Få detta att funka
+    override var prefersStatusBarHidden: Bool {
+        return true
+    }
+    
     func initDataLoad() {
         tableView.dataSource = dataSource
         var snapshot = NSDiffableDataSourceSnapshot<Section, Courses>()
@@ -93,22 +98,11 @@ class CoursesTableViewController: UITableViewController {
                 
                 let swipeConfig = UISwipeActionsConfiguration(actions: [favoriteAction])
                 return swipeConfig
-//        //Actionsheet? Den ska markeras på något sätt iaf!
-//        let favoriteAction = UIContextualAction(style: .normal, title: "Favorit") {
-//            (action, sourceView, completionHandler) in
-//            completionHandler(true)
-//        }
-//        
-//        favoriteAction.backgroundColor = UIColor.systemBlue
-//        favoriteAction.image = UIImage(systemName: "heart")
-//        let swipeConfig = UISwipeActionsConfiguration(actions: [favoriteAction])
-//        
-//        return swipeConfig
 
     }
     
-    override var prefersStatusBarHidden: Bool {
-        return true
-    }
+    
+    
+    
 
 }
