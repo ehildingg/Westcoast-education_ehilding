@@ -22,9 +22,4 @@ class DetailCourseViewController: UIViewController {
         courseDetailDescript.text = course?.courseLongDescription
         courseDetailImage.image = UIImage(named: course!.courseImage)
     }
-
-    // MARK: - Navigation
-    
-    
-
 }
