@@ -20,6 +20,7 @@
 		12E01679279DBA5F00B34655 /* CategoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E01678279DBA5F00B34655 /* CategoryTableViewCell.swift */; };
 		12E0167B279DBA7300B34655 /* CourseTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E0167A279DBA7300B34655 /* CourseTableViewCell.swift */; };
 		12E0167D279DE12900B34655 /* CoursesDiffableDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E0167C279DE12900B34655 /* CoursesDiffableDataSource.swift */; };
+		12E6D8D927A42E3600B82244 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E6D8D827A42E3600B82244 /* HomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,7 @@
 		12E01678279DBA5F00B34655 /* CategoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryTableViewCell.swift; sourceTree = "<group>"; };
 		12E0167A279DBA7300B34655 /* CourseTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CourseTableViewCell.swift; sourceTree = "<group>"; };
 		12E0167C279DE12900B34655 /* CoursesDiffableDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoursesDiffableDataSource.swift; sourceTree = "<group>"; };
+		12E6D8D827A42E3600B82244 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				12E0166C279DB91500B34655 /* CategoryTableViewController.swift */,
 				12E0166E279DB92600B34655 /* CoursesTableViewController.swift */,
 				12E01670279DB94300B34655 /* DetailCourseViewController.swift */,
+				12E6D8D827A42E3600B82244 /* HomeViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -190,6 +193,7 @@
 				12E01671279DB94300B34655 /* DetailCourseViewController.swift in Sources */,
 				12E0167B279DBA7300B34655 /* CourseTableViewCell.swift in Sources */,
 				12E0167D279DE12900B34655 /* CoursesDiffableDataSource.swift in Sources */,
+				12E6D8D927A42E3600B82244 /* HomeViewController.swift in Sources */,
 				12E0166D279DB91500B34655 /* CategoryTableViewController.swift in Sources */,
 				12E01675279DB9D700B34655 /* CourseModel.swift in Sources */,
 				12E01679279DBA5F00B34655 /* CategoryTableViewCell.swift in Sources */,

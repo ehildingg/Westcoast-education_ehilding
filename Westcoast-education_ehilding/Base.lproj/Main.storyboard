@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oMR-pB-0Sy">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RND-Uf-K8l">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -100,7 +100,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <exit id="ZnW-JB-8nk" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="3191" y="82"/>
+            <point key="canvasLocation" x="4100" y="81.696428571428569"/>
         </scene>
         <!--CategoryTableViewController-->
         <scene sceneID="12e-Qo-9IC">
@@ -184,7 +184,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5iA-E6-rR1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1650.7246376811595" y="81.696428571428569"/>
+            <point key="canvasLocation" x="2560.8695652173915" y="81.696428571428569"/>
         </scene>
         <!--CoursesTableViewController-->
         <scene sceneID="FUS-qo-y6j">
@@ -285,36 +285,98 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Cdd-er-Vto" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2421.739130434783" y="81.696428571428569"/>
+            <point key="canvasLocation" x="3331.884057971015" y="81.696428571428569"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="8sx-gZ-Sih">
+            <objects>
+                <viewController id="uyz-vf-lcu" customClass="HomeViewController" customModule="Westcoast_education_ehilding" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5ud-uM-9Wg">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="working-791184" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tLj-dQ-lAK">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="90" translatesAutoresizingMaskIntoConstraints="NO" id="FRu-5n-zhV">
+                                <rect key="frame" x="60" y="168" width="294" height="166"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Westcoast Education" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="94k-VC-W2S">
+                                        <rect key="frame" x="21" y="0.0" width="252" height="34.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="25"/>
+                                        <color key="textColor" systemColor="systemGray3Color"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VTb-FZ-7Sb">
+                                        <rect key="frame" x="68" y="124.5" width="158" height="41.5"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Kurskategorier">
+                                            <backgroundConfiguration key="background" cornerRadius="20">
+                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </backgroundConfiguration>
+                                            <fontDescription key="titleFontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                            <color key="baseForegroundColor" systemColor="systemGray5Color"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <segue destination="I1Z-eb-NMe" kind="show" id="NYq-Ys-aXU"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="ETf-4G-cOp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="tLj-dQ-lAK" secondAttribute="bottom" id="3XC-Cr-tB2"/>
+                            <constraint firstAttribute="trailing" secondItem="tLj-dQ-lAK" secondAttribute="trailing" id="41y-FG-ILu"/>
+                            <constraint firstItem="tLj-dQ-lAK" firstAttribute="leading" secondItem="5ud-uM-9Wg" secondAttribute="leading" id="5X6-3y-KgP"/>
+                            <constraint firstItem="tLj-dQ-lAK" firstAttribute="top" secondItem="5ud-uM-9Wg" secondAttribute="top" id="ARf-qB-3XB"/>
+                            <constraint firstItem="FRu-5n-zhV" firstAttribute="leading" secondItem="ETf-4G-cOp" secondAttribute="leading" constant="60" id="IBh-9u-2I4"/>
+                            <constraint firstItem="ETf-4G-cOp" firstAttribute="trailing" secondItem="FRu-5n-zhV" secondAttribute="trailing" constant="60" id="WDf-uA-HSR"/>
+                            <constraint firstItem="FRu-5n-zhV" firstAttribute="top" secondItem="ETf-4G-cOp" secondAttribute="top" constant="80" id="dXh-w2-91H"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="SkU-ng-W2n"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MkR-iL-sOp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1563.768115942029" y="79.6875"/>
         </scene>
         <!--Navigation Controller-->
-        <scene sceneID="vLm-JM-n2R">
+        <scene sceneID="3ew-Gg-sBR">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="oMR-pB-0Sy" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="RND-Uf-K8l" sceneMemberID="viewController">
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Evx-TV-60d">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="gjv-ty-CRP">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="I1Z-eb-NMe" kind="relationship" relationship="rootViewController" id="ifP-jF-wvk"/>
+                        <segue destination="uyz-vf-lcu" kind="relationship" relationship="rootViewController" id="ZLK-Fu-A75"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="JeW-cJ-x62" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0EP-CG-RWA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="813.04347826086962" y="81.696428571428569"/>
+            <point key="canvasLocation" x="653.62318840579712" y="79.6875"/>
         </scene>
     </scenes>
     <resources>
         <image name="background" width="1584" height="1056"/>
         <image name="star" catalog="system" width="128" height="116"/>
+        <image name="working-791184" width="1203" height="1804"/>
         <image name="xmark" catalog="system" width="128" height="113"/>
         <systemColor name="secondarySystemGroupedBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray3Color">
+            <color red="0.7803921568627451" green="0.7803921568627451" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
