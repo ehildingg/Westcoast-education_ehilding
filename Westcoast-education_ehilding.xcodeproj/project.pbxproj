@@ -77,7 +77,6 @@
 				12E0166A279DB8C900B34655 /* Controllers */,
 				12E01655279DB6A900B34655 /* AppDelegate.swift */,
 				12E01657279DB6A900B34655 /* SceneDelegate.swift */,
-				12E0165B279DB6A900B34655 /* Main.storyboard */,
 				12E0165E279DB6AA00B34655 /* Assets.xcassets */,
 				12E01660279DB6AA00B34655 /* LaunchScreen.storyboard */,
 				12E01663279DB6AA00B34655 /* Info.plist */,
@@ -109,6 +108,7 @@
 		12E0166B279DB8D000B34655 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				12E0165B279DB6A900B34655 /* Main.storyboard */,
 				12E01678279DBA5F00B34655 /* CategoryTableViewCell.swift */,
 				12E0167A279DBA7300B34655 /* CourseTableViewCell.swift */,
 			);
