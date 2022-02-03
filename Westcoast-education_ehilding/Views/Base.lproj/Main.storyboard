@@ -20,7 +20,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" semanticContentAttribute="forceLeftToRight" axis="vertical" distribution="equalSpacing" alignment="center" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="wh6-7P-6eI" userLabel="Root Stack">
-                                <rect key="frame" x="50" y="70" width="314" height="327"/>
+                                <rect key="frame" x="50" y="70" width="314" height="677"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lRl-6i-kND" userLabel="Course ImageView">
                                         <rect key="frame" x="67" y="0.0" width="180" height="180"/>
@@ -29,10 +29,10 @@
                                             <constraint firstAttribute="width" constant="180" id="Vbs-eE-eIi"/>
                                         </constraints>
                                     </imageView>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="AGV-bb-KtO" userLabel="Label Stack">
-                                        <rect key="frame" x="80" y="230" width="154.5" height="97"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="30" translatesAutoresizingMaskIntoConstraints="NO" id="AGV-bb-KtO" userLabel="Label Stack">
+                                        <rect key="frame" x="80" y="230" width="154.5" height="87"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Course Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XiW-vi-n2V">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Course Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XiW-vi-n2V">
                                                 <rect key="frame" x="0.0" y="0.0" width="154.5" height="35.5"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="25"/>
                                                 <color key="textColor" systemColor="systemBackgroundColor"/>
@@ -41,8 +41,8 @@
                                                     <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="40"/>
                                                 </variation>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Course Long Descript" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IFF-hM-amK">
-                                                <rect key="frame" x="0.0" y="75.5" width="154.5" height="21.5"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Course Long Descript" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="15" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IFF-hM-amK">
+                                                <rect key="frame" x="0.0" y="65.5" width="154.5" height="21.5"/>
                                                 <fontDescription key="fontDescription" name="ChalkboardSE-Bold" family="Chalkboard SE" pointSize="15"/>
                                                 <color key="textColor" systemColor="systemBackgroundColor"/>
                                                 <nil key="highlightedColor"/>
@@ -51,8 +51,19 @@
                                                 </variation>
                                             </label>
                                         </subviews>
-                                        <variation key="heightClass=compact" axis="horizontal"/>
+                                        <variation key="heightClass=compact" axis="vertical"/>
                                     </stackView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p8E-U3-Ovb" userLabel="Overlay">
+                                        <rect key="frame" x="137" y="367" width="40" height="310"/>
+                                        <color key="backgroundColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" white="1" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="375" id="iVQ-mA-hA7">
+                                                <variation key="heightClass=regular-widthClass=compact" constant="310"/>
+                                            </constraint>
+                                            <constraint firstAttribute="width" constant="40" id="mJc-kl-qrq"/>
+                                        </constraints>
+                                    </view>
                                 </subviews>
                                 <variation key="heightClass=compact" axis="horizontal" spacing="30"/>
                             </stackView>
@@ -82,7 +93,7 @@
                             </constraint>
                             <constraint firstItem="Xpj-FK-iaI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="esf-pU-wH0"/>
                             <constraint firstItem="wh6-7P-6eI" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="70" id="jJf-lb-tjq">
-                                <variation key="heightClass=compact" constant="95"/>
+                                <variation key="heightClass=compact" constant="10"/>
                             </constraint>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wh6-7P-6eI" secondAttribute="trailing" constant="50" id="qeA-mq-dd1">
                                 <variation key="heightClass=regular-widthClass=regular" constant="150"/>
@@ -100,7 +111,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <exit id="ZnW-JB-8nk" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="4100" y="81.696428571428569"/>
+            <point key="canvasLocation" x="4099.5535714285716" y="81.159420289855078"/>
         </scene>
         <!--CategoryTableViewController-->
         <scene sceneID="12e-Qo-9IC">
@@ -246,7 +257,7 @@
                                                 <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </buttonConfiguration>
                                             <connections>
-                                                <action selector="favoriteImageButtonWith_sender:" destination="s5A-Um-PZ8" eventType="touchUpInside" id="I1O-zW-5IO"/>
+                                                <action selector="changeFavorite:" destination="s5A-Um-PZ8" eventType="touchUpInside" id="Gbq-9j-3VL"/>
                                             </connections>
                                         </button>
                                     </subviews>
@@ -271,7 +282,7 @@
                                     <outlet property="courseDescription" destination="KCG-OY-MmR" id="wDc-VH-ydd"/>
                                     <outlet property="courseImage" destination="zIU-ka-mSo" id="wZf-OT-lG9"/>
                                     <outlet property="courseName" destination="QDx-iE-oya" id="tp2-D1-fKM"/>
-                                    <outlet property="favoriteImage" destination="zXd-5X-QqH" id="cvT-kN-2RR"/>
+                                    <outlet property="favoriteImage" destination="zXd-5X-QqH" id="YSJ-wb-rDn"/>
                                     <segue destination="BYZ-38-t0r" kind="presentation" identifier="segueToDetails" id="BcC-a5-Bwo"/>
                                 </connections>
                             </tableViewCell>

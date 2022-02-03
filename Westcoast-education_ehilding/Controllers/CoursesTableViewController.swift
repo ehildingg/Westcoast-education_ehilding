@@ -40,11 +40,13 @@ class CoursesTableViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
                 
-                let favoriteAction = UIContextualAction(style: .normal, title: "Favorite") {
+                let cell = tableView.cellForRow(at: indexPath) as! CourseTableViewCell
+        
+                let favoriteAction = UIContextualAction(style: .normal, title: "") {
                     (action, sourceView, completionHandler) in
                     let snapshot = self.dataSource.snapshot()
                     
-                    let cell = tableView.cellForRow(at: indexPath) as! CourseTableViewCell
+                    
                     
                     if(cell.favoriteImage.currentImage == UIImage(systemName: "star.fill")){
                         cell.favoriteImage.setImage(UIImage(systemName: "star"), for: .normal)
@@ -56,8 +58,9 @@ class CoursesTableViewController: UITableViewController {
                     
                     completionHandler(true)
                 }
-                
-                favoriteAction.backgroundColor = UIColor(named: "favoriteColor")
+        
+            favoriteAction.image = UIImage(systemName: "star")
+            favoriteAction.backgroundColor = UIColor.systemBlue
 
                 let swipeConfig = UISwipeActionsConfiguration(actions: [favoriteAction])
                 return swipeConfig
