@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1205FDA127F0DDF2000F2862 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1205FDA027F0DDF2000F2862 /* Colors.xcassets */; };
 		12E01656279DB6A900B34655 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E01655279DB6A900B34655 /* AppDelegate.swift */; };
 		12E01658279DB6A900B34655 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E01657279DB6A900B34655 /* SceneDelegate.swift */; };
 		12E0165D279DB6A900B34655 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12E0165B279DB6A900B34655 /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1205FDA027F0DDF2000F2862 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		12E01652279DB6A900B34655 /* Westcoast-education_ehilding.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Westcoast-education_ehilding.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		12E01655279DB6A900B34655 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		12E01657279DB6A900B34655 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,6 +80,7 @@
 				12E01655279DB6A900B34655 /* AppDelegate.swift */,
 				12E01657279DB6A900B34655 /* SceneDelegate.swift */,
 				12E0165E279DB6AA00B34655 /* Assets.xcassets */,
+				1205FDA027F0DDF2000F2862 /* Colors.xcassets */,
 				12E01660279DB6AA00B34655 /* LaunchScreen.storyboard */,
 				12E01663279DB6AA00B34655 /* Info.plist */,
 			);
@@ -174,6 +177,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				12E01662279DB6AA00B34655 /* LaunchScreen.storyboard in Resources */,
+				1205FDA127F0DDF2000F2862 /* Colors.xcassets in Resources */,
 				12E0165F279DB6AA00B34655 /* Assets.xcassets in Resources */,
 				12E0165D279DB6A900B34655 /* Main.storyboard in Resources */,
 			);
